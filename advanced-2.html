@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Score Array</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; color: blue; }
+        h1 { color: blue; }
+        .form-group { margin-bottom: 10px; }
+        label { display: inline-block; width: 60px; }
+        table { border-collapse: collapse; margin-top: 10px; width: 300px; }
+        th, td { text-align: left; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Use a Test Score array</h1>
+
+    <!-- نموذج إدخال الاسم والعلامة -->
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </div>
+    <div class="form-group">
+        <label for="score">Score:</label>
+        <input type="text" id="score">
+    </div>
+
+    <!-- أزرار التحكم الثلاثة -->
+    <div style="margin-bottom: 20px;">
+        <button id="add_btn">Add to Array</button>
+        <button id="results_btn">Display Results</button>
+        <button id="scores_btn">Display Scores</button>
+    </div>
+
+    <!-- قسم النتائج (Average & High score) -->
+    <div id="results">
+        <h2>Results</h2>
+    </div>
+
+    <!-- قسم الجدول (Scores Table) -->
+    <div>
+        <h2>Scores</h2>
+        <table id="scores_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الصفوف ستضاف ديناميكياً هنا -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ربط ملف الجافاسكريبت -->
+    <script src="advanced-2.js"></script>
+</body>
+</html>

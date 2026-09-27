@@ -1,29 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Welcome to Bookstore & Reading Club</h1>
-            <p>Register your membership and discover your next great read!</p>
-        </header>
+      <header>
+        <h1>Welcome to Bookstore & Reading Club</h1>
+        <p>Register your membership and discover your next great read!</p>
+      </header>
 
-        <main>
-            <div class="card">
-                <h2>Member Portal</h2>
-                <p>Click the button below to start your registration and book reservation process.</p>
-                <button id="startBtn">Start Registration</button>
-            </div>
-        </main>
+      <main>
+        <form id="bookForm">
+          <input type="text" id="username" /><br />
+          <input type="password" id="password" /><br />
+          <input type="password" id="confirm_password" /><br />
+
+          <label>Membership Type:</label>
+          <div>
+            <input
+              type="radio"
+              id="student"
+              name="membershipType"
+              value="student"
+            />
+            <label for="student">Student</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="regular"
+              name="membershipType"
+              value="regular"
+            />
+            <label for="regular">Regular</label>
+          </div>
+          <br />
+
+          <input type="text" id="genre" /><br />
+          <input type="text" id="title" /><br />
+          <input type="submit" value="Submit" id="button" />
+          <div id="result-card"></div>
+        </form>
+      </main>
     </div>
 
-    <!-- ربط ملف الجافاسكريبت -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
